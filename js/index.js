@@ -1,10 +1,10 @@
 'use strict';
 
-function button(text) {
+function Button(text) {
 	this.text = text || 'Hello';
 }
 
-button.prototype = {
+Button.prototype = {
 	create: function() {
 		var self = this;
 		this.element = document.createElement('button');
@@ -16,6 +16,6 @@ button.prototype = {
 	}
 }
 
-var btn1 = new button('It Works!');
+var btn1 = new Button('It Works!');
 
 btn1.create();
